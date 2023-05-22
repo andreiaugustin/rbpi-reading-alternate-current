@@ -60,9 +60,9 @@ while True:
     time.sleep(0.5)
 ```
 
-The above script will give us the Amperes going through the wire measure every half-second. Note the values will fluctuate between positive and negative numbers as alternate current changes direction.
+The above script will give us the Amperes going through the wire measured every half-second. Note the values will fluctuate between positive and negative numbers as alternate current changes direction.
 
-To get positive values only, we need to calculate the RMS by taking multiple readings over one complete cycle of the AC waveform (approximately 20ms for a 50Hz system), square them, take the average adn then take the square root of this average. However, keep in mind that this would require a smapling rate high enough to accurately represent the AC waveform, which might be challenging to achieve with a Raspberry Pi.
+To get positive values only, we need to calculate the RMS by taking multiple readings over one complete cycle of the AC waveform (approximately 20ms for a 50Hz system), square them, take the average and then take the square root of this average. However, keep in mind that this would require a sampling rate high enough to accurately represent the AC waveform, which might be challenging to achieve with a Raspberry Pi.
 
 Here's a simplified version of how we could calculate the RMS (we also round to two decimal places when displaying the value):
 
