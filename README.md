@@ -19,7 +19,7 @@
 **MCP3008 to Raspberry Pi**
 
 - VDD (MCP3008 pin 16) to 3.3V (Pi pin 1)
-- VREF (MCP3008 pin 15) to 3.3V (Pi pin 1)
+- VREF (MCP3008 pin 15) to 3.3V (Pi pin 17)
 - AGND (MCP3008 pin 14) to GND (Pi pin 6)
 - CLK (MCP3008 pin 13) to GPIO11/SCLK (Pi pin 23)
 - DOUT (MCP3008 pin 12) to GPIO9/MISO (Pi pin 21)
